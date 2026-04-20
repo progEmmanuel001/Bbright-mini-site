@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+     <link rel="icon" type="image/x-icon" href="./images/hub.jpg">
+    <title>BBRIGHTTECH</title>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="./images/bbtech.png" alt="B.Bright Tech Hub" style="height: 130px" />
+    </div>
+
+    <button class="cta-button"  onclick="goToSlide(2); return false;">Write to Us</button>
+
+    <nav class="carousel-nav">
+      <a href="#slide1" class="navlink active" onclick="goToSlide(0); return false;">Job Openings</a>
+      <a href="#slide2" class="navlink" onclick="goToSlide(1); return false;">About Us</a>
+      <a href="#slide3" class="navlink" onclick="goToSlide(2); return false;">Contact Us</a>
+    </nav>
+
+    <div class="hamburger" id="hamburger" aria-label="Open menu" tabindex="0">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </header>
+
+  <!-- Sidebar for mobile -->
+  <div class="sidebar carousel-nav" id="sidebar" aria-hidden="true">
+    <a href="#" class="sidebar-link navlink" onclick="goToSlide(0); return false;">Job Openings</a>
+    <a href="#" class="sidebar-link navlink" onclick="goToSlide(1); return false;">About Us</a>
+    <a href="#" class="sidebar-link navlink" onclick="goToSlide(2); return false;">Contact Us</a>
+    <a href="#" class="ctb-button sidebar-link navlink"   onclick="goToSlide(2); return false;">Write to Us</a>
+  </div>
+  <div class="overlay" id="overlay"></div>
+
+  <section class="hero">
+    <div class="carousel" id="carousel">
+        <!-- slide 1 -->
+   <div class="carousel-slide active">
+          <div class="recruit-section"  >
+  <div class="recruit-content">
+    <h2><span class="highlight">JOIN THE TEAM AND COME</span><br>MAKE GAMES AND CODE WITH US!</h2>
+    <p>We are looking for talent and believe<br>that you can achieve your professional<br>goals with our team.</p>
+    <a href="#" class="join-button">JOIN OUR TEAM</a>
+  </div>
+  <div class="recruit-image">
+    <img src="./images/bag mocked.png" alt="Join Our Team">
+  </div>
+</div>  
+</div>
+  <!--  Parent Container -->
+    <!-- slide 2 -->
+   <div class="carousel-slide">
+  <div class="combined-section">
+
+    <!--  WHY WORK WITH US Section -->
+    <section class="why-work-section">
+      <h2>WHY WORK WITH US?</h2>
+      <p>We are looking for talent and believe that you can achieve your professional goals with our team.</p>
+
+      <div class="features">
+        <!-- Feature Card 1 -->
+        <div class="feature-card">
+          <img src="./svg/team-fill.svg" alt="Team Icon" />
+          <p>YOUNG AND PRODUCTIVE TEAM</p>
+          <div class="diamond">1</div>
+        </div>
+
+        <!-- Feature Card 2 -->
+        <div class="feature-card">
+          
+          <img src="./svg/bar-chart-grouped-line.svg" alt="Growth Icon" />
+          <p>PROFESSIONAL AND CAREER GROWTH</p>
+          <div class="diamond">2</div>
+        </div>
+
+        <!-- Feature Card 3 -->
+        <div class="feature-card">
+          <img src="./svg/discount-percent-line.svg" alt="Salary Icon" />
+          <p>COMPETITIVE SALARY</p>
+          <div class="diamond">3</div>
+        </div>
+
+        <!-- Feature Card 4 -->
+        <div class="feature-card">
+          <img src="./svg/mail-ai-line.svg" alt="Projects Icon" />
+          <p>INTERESTING AND CHALLENGING PROJECTS</p>
+          <div class="diamond">4</div>
+        </div>
+      </div>
+    </section>
+    <!-- END: WHY WORK WITH US Section -->
+
+    <!-- START: GAME INFO CARD Section -->
+    <section class="game-info-card">
+      <div class="game-image">
+        <img src="./images/show.jpg" alt="OneState Game" />
+      </div>
+
+      <div class="game-info">
+        <h3>🎮 STAR CITY </h3>
+        <p class="genre">Genre: <span>Role-Play</span></p>
+        <p class="description">
+<!-- details -->
+        <div class="store-buttons">
+          <a href="#" class="store-btn">🛒 APP STORE</a>
+          <a href="#" class="store-btn">▶ GOOGLE PLAY</a>
+        </div>
+      </div>
+    </section>
+    <!-- END: GAME INFO CARD Section -->
+
+  </div>
+  <!-- END: Parent Container -->
+   </div>
+
+  <!-- slide 3 -->
+   <div class="carousel-slide">
+      <div class="contact-form-slide">
+        <div class="contact-left">
+          <img src="./images/hub.jpg" alt="Starcity" />
+          <p>Business Website - <a href="https://www.bbrighttech.com/">B.BrightTechHub</a></p>
+          <h2>Company Details</h2>
+          <p>
+            B.Bright Tech Hub<br />
+            19, Gbola Onibiyo
+            Ahmadiyyah,<br />
+            Lagos.<br />
+            
+          </p>
+        </div>
+        <div class="contact-right">
+          <input type="email" placeholder="Your Email" required />
+          <input type="text" placeholder="Your Full Name" required />
+          <select required>
+            <option value="">Subject</option>
+            <option value="Job Inquiry">Job Inquiry</option>
+            <option value="Project Collaboration">Project Collaboration</option>
+          </select>
+          <textarea rows="5" placeholder="Your Message" required></textarea>
+          <p><b>Attach up to 2 files</b> (DOC, DOCX, PDF, TXT)</p>
+          <input type="file" multiple />
+          <div class="checkbox">
+            <input type="checkbox" required />
+            <label>I agree to the Privacy Policy</label>
+          </div>
+          <button class="send-button">Send</button>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section> 
+  <script src="script.js"></script>  
+</body>
+</html>
